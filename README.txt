@@ -1,0 +1,1 @@
+Atenção: Não esqueça de recortar o arquivo com o idioma desejado da pasta "textos" e colocar na pasta juntos com o restante do programa.
