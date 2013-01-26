@@ -125,7 +125,7 @@ boolean cd=false;
 //*******************************************************************************************************
 //********************** Variáveis das fuções do touch screen e tela inicial ****************************
 //*******************************************************************************************************
-UTFT        myGLCD(ITDB32WC, 38,39,40,41);   // Substitua "X" pelo modelo do seu LCD.
+UTFT        myGLCD(x, 38,39,40,41);   // Substitua "X" pelo modelo do seu LCD.
 UTouch      myTouch(6,5,4,3,2);
 int x, y;                  // Coordenadas do touch screen
 long previousMillis = 0;
@@ -133,8 +133,11 @@ byte data[56];
 String day; 
 int whiteLed, blueLed;    // Valor anterior de PWM.
 int dispScreen = 0;
-float fator_escala_x = 0.80;
-float fator_escala_y = 1.00;
+
+
+// Lembre-se que esse programa foi escrito para um LCD de 400 x 240. Portanto para um LCD de 320 x 240, o fator de escala X é igual a 320 / 400 = 0.80 e o Y é igual a 240 / 240 = 1.00.
+float fator_escala_x = 0.80; // Selecione a escala de acordo com o seu LCD 
+float fator_escala_y = 1.00; // Selecione a escala de acordo com o seu LCD
 
 // tela inicio =0, 
 // tela de menu = 1, 

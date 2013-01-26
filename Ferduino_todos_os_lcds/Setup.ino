@@ -30,6 +30,7 @@ void setup()
   pinMode (temporizador5, OUTPUT);
 
   myGLCD.InitLCD(LANDSCAPE); // Orientação da imagem no LCD.
+  // Lembre-se que esse programa foi escrito para um LCD de 400 x 240. Portanto para um LCD de 320 x 240, o fator de escala X é igual a 320 / 400 = 0.80 e o Y é igual a 240 / 240 = 1.00.
   myGLCD.setScaleFactor(0.80, 1.00); // X, Y
   myGLCD.clrScr(); // Limpa o LCD.
 
