@@ -13,7 +13,7 @@
 // controller.
 
 #define DISABLE_HX8347A			1	// ITDB32
-//#define DISABLE_ILI9327			1	// ITDB32WC / TFT01_32W
+#define DISABLE_ILI9327			1	// ITDB32WC / TFT01_32W
 #define DISABLE_SSD1289			1	// ITDB32S / TFT_32 / GEEE32 / INFINIT32	- This single define will disable both normal and latched mode for this controller
 #define DISABLE_ILI9325C  		1	// ITDB24
 #define DISABLE_ILI9325D  		1	// ITDB24D / ITDB24DWOT / ITDB28 / TFT01_24_8 / TFT01_24_16	- This single define will disable both 8bit and 16bit mode for this controller
